@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+
+}
+
+  #navbar{
+      display: flex;
+      align-items: center;
+
+  }
+   
+  #navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+  #logo{
+    margin: 10px 10px;
+
+   }
+ 
+   #logo img{
+    height: 70px;
+    margin: -9px 9px;
+    }
+
+    
+     
+    #navbar{
+    
+        position: sticky;
+        top: 0;
+    }
+    
+
+   #navbar ul{
+       display: flex;
+   }
+
+   #navbar ul li{
+       list-style: none;
+       font-size: 1.2rem;
+
+   }
+
+   #navbar ul li a{
+       display: block;
+       padding: 5px 2px;
+       margin:4px;
+       color: white;
+       text-decoration: none;
+       border-radius: 10px;
+       border-left: 2px solid #eb3c5a;
+       border-right: 2px solid #f67831;
+       border-bottom: 2px solid #eb3c5a;
+       border-top: 2px solid #f67831;
+   }
+   #navbar li a:hover{
+       color: black;
+       background-color:  rgb(248, 81, 20);
+   }
+   #home{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 370px;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+   }
+
+   #home::before{
+    content:"";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover ;
+    height: 390px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services Section */
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid red;
+    padding: 30px;
+    margin: 35px;
+    margin-top: -26px;
+    margin-bottom: 27px;
+    border-radius: 25px;
+    background-color: rgb(252, 247, 245);
+}
+
+#services .box img{
+height: 140px;    
+display: block;
+margin: auto;
+}
+
+#client-section{
+/* height: 300px; */
+position: relative;
+}
+ 
+#client-section::before{
+content: "";
+position: absolute;
+background: url('bg.jpg');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 35px;
+}
+
+#clients img{
+height: 60px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+   content:"" ; 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 0.5;
+   z-index: -1;
+   background: url('contact.jpg') no-repeat center center/cover ; 
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    
+}
+
+#contact-box input,#contact-box textarea
+{
+width: 100%;
+padding: 0.4rem;
+border-radius: 10px;
+font size: 1.1rem;
+
+
+}
+
+#contact-box form{
+    
+  width: 50%;  
+}
+
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif; 
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* utility Classes */
+.h-primary{
+   font-size: 2.8rem;
+   padding: 12px;
+   font-family: 'Bree Serif', serif;
+   }
+
+   .h-secondary{
+   font-size: 2. rem;
+   padding: 12px;
+   font-family: 'Bree Serif', serif;
+   }
+    
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: orangered;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn:hover,
+.btn .active {
+
+  background-color: orangered;
+
+}
+
+.center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#btn11 {
+    width: 50%;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-top: 3px;
+}
+.btnn {
+    font-family: 'Fredoka One', cursive;
+    font-size: 14px;
+    margin: 15px 1px;
+    
+    border-radius: 7px;
+    cursor: pointer;
+   
+
+}
+
+.btnn:hover,
+.btnn .active {
+
+  background-color: orangered;
+
+}
+ 
